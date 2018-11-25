@@ -1,0 +1,116 @@
+div.slide-comb {
+	width: 100%;
+	height: 100%;
+	top: -63px;
+    border: 10px solid black;
+    position: relative;
+    overflow: hidden;
+	margin: 0 auto;
+}
+
+.background {
+	padding: 5rem 2rem !important;
+	margin-top: 10px;
+	background-image: url("../img/Straight_Mag.jpg") !important;
+	background: no-repeat;
+	background: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+div.slide-comb img {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+div.slide-comb .resized {
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 100%;
+	width: 50%;
+	overflow: hidden;
+}
+div.slide-comb .divider {
+	position: absolute; 
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	width: 4px;
+	margin-left: -2px;
+    background: #ffffff;
+}
+.divider {
+	/* Thin line seperator */
+	position: absolute;
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	width: 4px;
+	margin-left: -2px;
+	background: rgba(0, 0, 0, 0.5);
+	cursor: ew-resize;
+  }
+  .divider:after {
+	/* Big orange knob  */
+	position: absolute;
+    top: 51%;
+    width: 66px;
+    margin: -32px 0 0 -32px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+	content: '\21F9';
+  }
+  .draggable:after {
+	width: 48px;
+	height: 48px;
+	margin: -24px 0 0 -24px;
+	line-height: 48px;
+	font-size: 30px;
+  }
+  
+
+
+@media only screen and (max-width: 990px) {
+    .background {
+		padding: 3.5rem 1.5rem !important;
+	}
+	div.slide-comb {
+		top: -42px !important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+    .background {
+		padding: 2.5rem 1rem !important;
+	}
+	div.slide-comb {
+		top: -35px !important;
+	}
+}
+
+@media only screen and (max-width: 415px) {
+    .background {
+		padding: 2rem 0.5rem!important;
+	}
+	div.slide-comb {
+		top: -26px !important;
+		border: 5px solid black !important;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+    .background {
+		padding: 1.5rem 0.5rem!important;
+	}
+	div.slide-comb {
+		top: -17px !important;
+		border: 5px solid black !important;
+	}
+}
+
